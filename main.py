@@ -27,7 +27,7 @@ BALL_RADIUS = 7
 ## Set Background Colour
 BACKGROUND_COLOR = BLACK
 
-WIN_SCORE = 3
+WIN_SCORE = 20
 
 def main():
     running = True
@@ -40,15 +40,13 @@ def main():
     ## Initialize score
     left_score = right_score = 0
 
-    ## Win text
-
     while (running):
 
         ##Check for events
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-        
+
         key_pressed = pygame.key.get_pressed()
         handle_paddle_movement(key_pressed, left_paddle, right_paddle)
         

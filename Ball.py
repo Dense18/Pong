@@ -2,7 +2,7 @@ import pygame
 
 class Ball:
     WHITE = (255,255,255)
-    DEFAULT_MAX_X_VELOCITY = 6
+    DEFAULT_MAX_X_VELOCITY = 10
 
     def __init__(self, x, y, radius, color = WHITE, max_velocity = DEFAULT_MAX_X_VELOCITY):
 
